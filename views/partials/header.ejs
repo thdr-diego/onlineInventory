@@ -2,19 +2,40 @@
 <html>
   <head>
     <title><%= title %></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
     <header>
-       <section class="headerTop"> <div class="leftSide"><img figure class="logo" src="./images/logoSmall.png" alt="Logotipo Estoque OnLine">
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images\logo.png" alt="" width="90" height="40" class="d-inline-block align-text-top">
+          </a>
+            <div class="col-md-auto">
+            <div class="col">
+                <button type="button" class="btn btn-outline-primary btn-sm" id="btnNav">Contato</button>
+                <button type="button" class="btn btn-outline-primary btn-sm" id="btnNav">Cadastre-se</button>
+              </div>
+            </div>
+            <div class="col-4">
+        <form class="row g-3 rounded float-end">
+          <div class="col-auto">
+            <input class="form-control form-control-sm" type="text" placeholder="Insira seu usuário" aria-label="User">
+          </div>
+          <div class="col-auto">
+            <label for="inputPassword2" class="visually-hidden">Password</label>
+            <input type="password" class="form-control form-control-sm" id="inputPassword2" placeholder="Insira sua senha">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary btn-sm">Entrar</button>
+          </div>
+        </form>
         </div>
-        <div class="menuBottom">
-            <div class="btn"><h3>SENHA</h3></div>
-            <div class="btn"><h3>USUARIO</h3></div>
-            <div class="btn"><h3>CONTATO</h3></div>
-            <div class="btn"><h3>CADASTRE-SE</h3></div>
         </div>
-    </section>
+ 
+</div>
+</nav>
         </header>
   </body>
 </html>
